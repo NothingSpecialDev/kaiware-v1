@@ -1,6 +1,6 @@
 {
   "name": "kaiware",
-  "productName": "Kaiware",
+  "productName": "kaiware",
   "version": "0.1.0",
   "description": "My Electron application description",
   "main": ".webpack/main",
@@ -37,6 +37,20 @@
           "name": "@electron-forge/maker-dmg",
           "config": {
             "format": "ULFO"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {
+            "maintainer": "Garrett Downs",
+            "homepage": "https://github.com/garredow/kaiware"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {
+            "maintainer": "Garrett Downs",
+            "homepage": "https://github.com/garredow/kaiware"
           }
         }
       ],
